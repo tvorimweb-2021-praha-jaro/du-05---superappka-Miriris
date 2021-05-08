@@ -24,10 +24,254 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.menu ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.odkaz-hlavni {
+    font-weight: 700;
+}
+
+.menu a {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+li :hover {
+    background-color: #48418e;
+    color: white;
+    transform: scale(1.5);
+}
+
+.appka {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/pozadi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.appka-text {
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.appka-obrazek {
+    display: none;
+}
+
+footer p,
+.appka-text h1, h2 {
+    color: white;
+}
+
+.appka-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.appka-text h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.appka-tlacitka {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tlacitko-stahnout,
+.tlacitko-informace {
+    width: 200px;
+    height: 4.5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    border: 1.5px solid white;
+    border-top: 1px solid white;
+    box-shadow: 0px 1px 8px 1px rgb(136, 131, 131);
+    margin: 0.5rem;
+    flex-grow: 1;
+}
+
+.odkazy {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.tlacitko-stahnout {
+    background-color: #48418e;
+}
+
+.tlacitko-stahnout:hover {
+    background-color: transparent; 
+}
+
+.tlacitko-informace {
+    background-color: transparent;
+}
+
+.tlacitko-informace:hover {
+    background-color: #48418e;
+}
+
+.tlacitko-stahnout a,
+.tlacitko-informace a {
+    text-decoration: none;
+    color: white;
+}
+
+.aktivita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.aktivita img {
+  text-align: center;
+      width: 80px;
+}
+
+.aktivita h3, p {
+    color: #332e6b;
+    text-align: center;
+}
+
+.aktivita h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    order: -1;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: #332e6b;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 405px) {
+
+    .appka-tlacitka {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tlacitko-stahnout,
+    .tlacitko-informace {
+        margin: 0.5rem;
+    }
+
+    .appka-text h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    .appka-text h2 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 566px) {
+
+    .appka-text h1 {
+      font-size: 5rem;
+    }
+    .odkazy {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .aktivita {
+      flex-grow: 0;
+    }
+
+    .aktivita h3 {
+      order: 0;
+    }
+}
+
+    @media screen and (min-width: 920px) {
+
+    .appka {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .appka-tlacitka {
+      margin-top: 4rem;
+    }
+
+    .appka-text h1 {
+      margin-bottom: 3rem;
+    }
+
+    .appka-obrazek {
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    .appka-obrazek img {
+      overflow: hidden;
+    }
+    .aktivita {
+      margin: 1rem;
+      flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .obal {
+      width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+      margin: 0 auto; /* pruh je na stránce vycentrovaný */
+      }
+}
+
+
+
+
+
+
+
+
